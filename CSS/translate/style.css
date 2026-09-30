@@ -1,0 +1,54 @@
+    .body {
+        border: 1px solid black;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        padding: 20px;
+        margin: 200px;
+        margin-left: 500px;
+        animation: muskan 2s liner;
+    }
+    
+    .body:hover {
+        width: 300px;
+        translate: width 2s;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: muskan 2s liner;
+    }
+    
+    #click {
+        padding: 0px;
+        margin: 0px;
+        background-color: red;
+        box-shadow: 1px 1px 1px 4px rgb(3, 3, 3);
+    }
+    
+    #click:hover {
+        background-color: rgb(232, 178, 178);
+        transform: translate(2px 2px);
+    }
+    
+    #click:active {
+        background-color: aliceblue;
+    }
+    
+    @keyframes muskan {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        25% {
+            top: 0;
+            left: 500;
+        }
+        50% {
+            top: 500;
+            left: 500;
+        }
+        100% {
+            top: 0;
+            left: 0;
+        }
+    }

@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#hw {
+    width: 400px;
+    height: 2.5rem;
+    border: 1px solid black;
+    transition: width 2s 1s, background-colour 2s 1s;
+    text-wrap-mode: nowrap;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+#hw:hover {
+    width: 600px;
+    transition: width 2s 1s, background-colour 2s 1s;
+    background-color: rgb(176, 138, 211);
+}
+
+#wellcome {
+    background-color: cadetblue;
+}
+
+#wellcome::after {
+    content: "✉️";
+}
+
+.d::before {
+    content: " ✉️ ";
+}
+
+#box {
+    border: 1px solid black;
+}

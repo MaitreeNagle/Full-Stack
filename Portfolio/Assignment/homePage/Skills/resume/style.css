@@ -2,6 +2,7 @@
     width: 900px;
     background: white;
     display: flex;
+    background-color: aliceblue;
 }
 
 .left {
@@ -38,3 +39,5 @@
     font-size: 14px;
     line-height: 2;
 }
+
+* {}

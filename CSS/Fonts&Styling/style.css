@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+header {
+    font-family: "Edu QLD Hand", cursive;
+}
+
+h3 {
+    font-family: "Google Sans", sans-serif;
+}
+
+.subheading {
+    font-size: larger;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+}
+
+#description span {
+    font-weight: 400;
+    color: green;
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+.pointer-head {
+    font-size: larger;
+    font-weight: 700;
+    font-family: "Shadows Into Light", cursive;
+}
+
+ul {
+    margin-left: 30px;
+    list-style: "🤣  ";
+}
+
+#section2 {
+    ol {
+        margin-left: 30px;
+        list-style: lower-greek;
+    }
+    li::first-letter {
+        font-size: xx-large;
+    }
+    li::firs ol li:first-child {
+        background-color: red;
+    }
+    ol li:last-child {
+        background-color: rgb(9, 255, 0);
+    }
+}
