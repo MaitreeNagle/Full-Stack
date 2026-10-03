@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .nav-links {
+            cursor: pointer;
+        }
+        
+        .dropdown:hover {
+            background-color: transparent !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar  bg-primary ">
+        <div class="container">
+            <div class="navbar-brand  text-light fw-semibold">Learning Hub</div>
+            <div class="nav-item  text-light d-flex gap-5">
+
+                <div class="nav-links ">Home</div>
+                <div class="nav-links ">About</div>
+                <div class="nav-links ">Contact</div>
+                <div class=" dropdown ">
+
+                    <button class="btn btn-secondary dropdown-toggle
+                
+                     " type="button " data-bs-toggle="dropdown " aria-expanded="false "> Course
+                            <ul class="dropdown-menu ">
+                                <li>
+                                <a class="dropdown-item " href="# ">HTML</a></li>
+                                <li>
+                                <a class="dropdown-item " href="# ">Css</a>
+                               </li>
+                                <li>
+                                <a class="dropdown-item " href="# ">java</a>
+                                 </li>
+                            </ul>
+                         </button>
+                </div>
+
+
+
+                <div class="nav-links ">Contact</div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3">
+        <div class="display-5">Course Registration</div>
+        <label for="fullname" class="form-label">FullName</label>
+        <input type="text" class="form-control">
+        <br> <label for="course" class="form-label">Course</label>
+        <select name="" id="" class="form-select">
+            <option value=" ">1</option>
+            <option value=" ">2</option>
+             <option value=" ">3</option>
+             <option value=" ">4</option>
+        </select>
+
+        <br>
+        <label for="">Enable</label>
+        <input type="checkbox" class="form-check-input" role="switch" id="switchCheck">
+
+    </div>
+    <br>
+
+
+
+    <!-- bootstrapscript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js " integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI " crossorigin="anonymous "></script>
+
+</body>
+
+</html>

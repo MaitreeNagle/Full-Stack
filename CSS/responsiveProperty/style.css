@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bigbox {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    gap: 20px;
+    margin: 30px;
+    background-color: red;
+}
+
+@media screen and (max-width: 1000px) {
+    .big-box {
+        grid-template-columns: auto auto auto;
+        row-gap: 20px;
+    }
+    #para1 img {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bigbox {
+        grid-template-columns: auto auto;
+        row-gap: 20px;
+    }
+}
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+}
+
+#badabox {
+    padding: 10px 30px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto auto;
+    .box {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+.box img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+@media screen and ( max-width: 400px) {
+    #badabox {
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+}
+
+@media screen and ( max-width: 800px) {
+    #badabox {
+        grid-template-columns: auto auto auto;
+        row-gap: 20px;
+    }
+} */
+
+@media screen and ( max-width: 1400px) {
+    #badabox {
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 20px;
+    }
+}
