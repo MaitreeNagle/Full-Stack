@@ -1,0 +1,41 @@
+    @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Grechen+Fuemen&display=swap');
+    .font-Grechen {
+        font-family: "Grechen Fuemen", cursive;
+    }
+    
+    .google-sans {
+        font-family: "Google Sans", sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        height: 90vw;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(30%);
+    }
+    
+    #hero #bg-img-1 {
+        height: 90vh;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    #hero-outer {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #hero-inner {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
