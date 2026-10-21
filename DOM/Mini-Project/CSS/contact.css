@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+.navbar {
+    background: #071329;
+    padding: 22px 5%;
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-container nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-container nav a {
+    color: #c4ccda;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-container nav a.active {
+    color: #2585ff;
+}
+
+.nav-container nav .get-started {
+    background: #0757db;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+}
+
+
+/* SAME HERO SIZE AS CONTACT PAGE */
+
+.page-hero {
+    height: 320px;
+    /* Same height on both pages */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient( circle at 50% 20%, #102d63 0%, #071a3a 50%, #050f25 100%);
+}
+
+.page-hero-content h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: #1685ff;
+    font-size: 16px;
+}
+
+.breadcrumb a {
+    color: #c4ccda;
+    text-decoration: none;
+}
+
+
+/* ABOUT CONTENT */
+
+.about-section {
+    padding: 90px 6%;
+    background: #ffffff;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.section-label {
+    color: #087cff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.about-text h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #17233b;
+    margin-bottom: 22px;
+}
+
+.about-text h2 span {
+    color: #087cff;
+}
+
+.about-text>p:not(.section-label) {
+    color: #6f7888;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.about-button {
+    display: inline-block;
+    background: #0757db;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}

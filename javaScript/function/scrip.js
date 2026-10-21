@@ -12,16 +12,16 @@ function sum_with_d(x, y = 10) {
 
 }
 
-function calculater(a, b, c) {
+// function calculater(a, b, c) {
 
-    return = a + b + c;
+//     return a + b + c;
 
 
-};
-let add = calculater(10, 20, 30) {
-    console.log(add);
+// };
+// let add = calculater(10, 20, 30) {
+//     console.log(add);
 
-};
+// };
 
 const geet = function() {
     console.log("Wellcome to java");
