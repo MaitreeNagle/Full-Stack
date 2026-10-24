@@ -1,0 +1,27 @@
+#inner {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#outer {
+    border: 1px solid black;
+    height: 100px;
+}
+
+#EventCapturing {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#eventdelegation {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    /* {
+        border: 1px solid black;
+    } */
+}
