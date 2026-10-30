@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student and Course Management Dashboard</title>
+</head>
+
+<body>
+
+    <h1>Student and Course Management Dashboard</h1>
+
+    <h2>Institute Information</h2>
+    <p id="instituteName"></p>
+    <p id="firstCourse"></p>
+    <p id="secondCourseStudent"></p>
+
+    <h2>Student Records</h2>
+    <p id="studentCourse"></p>
+    <p id="studentMarks"></p>
+
+    <h2>Updated Course Information</h2>
+    <p id="updatedCourse"></p>
+    <p id="courseStudents"></p>
+
+    <h2>Updated Student Marks</h2>
+    <p id="updatedMarks"></p>
+
+    <script>
+        // 1. Create an institute with nested courses and student arrays
+        const institute = {
+            name: "RICR",
+            courses: [{
+                title: "MERN Stack",
+                details: {
+                    duration: "6 months",
+                    fee: 30000
+                },
+                students: ["Aarav", "Priya"]
+            }, {
+                title: "Web Development",
+                details: {
+                    duration: "4 months",
+                    fee: 20000
+                },
+                students: ["Rahul", "Mia"]
+            }]
+        };
+
+        // 2. Access nested properties and arrays
+        document.getElementById("instituteName").textContent =
+            "Institute: " + institute.name;
+
+        document.getElementById("firstCourse").textContent =
+            "First Course: " + institute.courses[0].title;
+
+        document.getElementById("secondCourseStudent").textContent =
+            "First Student in Second Course: " +
+            institute.courses[1].students[0];
+
+        // 3. Create an array of student objects
+        const students = [{
+            name: "Aarav",
+            course: "MERN Stack",
+            marks: [80, 85, 90]
+        }, {
+            name: "Priya",
+            course: "Web Development",
+            marks: [88, 92, 95]
+        }];
+
+        document.getElementById("studentCourse").textContent =
+            students[0].name + "'s Course: " + students[0].course;
+
+        document.getElementById("studentMarks").textContent =
+            students[1].name + "'s Last Mark: " +
+            students[1].marks[students[1].marks.length - 1];
+
+        // 4. Update nested course details
+        institute.courses[0].details.fee = 32000;
+
+        // Add a new student to the first course
+        institute.courses[0].students.push("Dev");
+
+        document.getElementById("updatedCourse").textContent =
+            "Updated " + institute.courses[0].title +
+            " Fee: ₹" + institute.courses[0].details.fee;
+
+        document.getElementById("courseStudents").textContent =
+            "Course Students: " +
+            institute.courses[0].students.join(", ");
+
+        // 5. Update a student's mark using an array index
+        students[0].marks[1] = 95;
+
+        document.getElementById("updatedMarks").textContent =
+            students[0].name + "'s Updated Marks: " +
+            students[0].marks.join(", ");
+    </script>
+
+</body>
+
+</html>

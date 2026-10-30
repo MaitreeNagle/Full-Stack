@@ -1,0 +1,90 @@
+ Code
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Management System</title>
+</head>
+
+<body>
+
+    <h1>Student Profile Management System</h1>
+
+    <h2>Student Information</h2>
+    <p id="studentInfo"></p>
+
+    <h2>Address Information</h2>
+    <p id="addressInfo"></p>
+
+    <h2>Course Information</h2>
+    <p id="courseInfo"></p>
+
+    <h2>Updated Profile</h2>
+    <p id="updatedProfile"></p>
+
+    <h2>Safe Property Access</h2>
+    <p id="safeAccess"></p>
+
+    <script>
+        // Create a student object with nested objects
+        const student = {
+            name: "Aarav",
+            age: 20,
+
+            address: {
+                city: "Bhopal",
+                state: "Madhya Pradesh"
+            },
+
+            course: {
+                title: "JavaScript Fundamentals",
+                instructor: {
+                    name: "Priya Sharma",
+                    experience: 5
+                }
+            }
+        };
+
+        // Access properties using dot and bracket notation
+        document.getElementById("studentInfo").textContent =
+            "Name: " + student.name +
+            " | Age: " + student["age"];
+
+        document.getElementById("addressInfo").textContent =
+            "City: " + student.address.city +
+            " | State: " + student["address"]["state"];
+
+        // Access a property dynamically using a variable
+        const propertyName = "city";
+
+        document.getElementById("courseInfo").textContent =
+            "City using a variable: " +
+            student.address[propertyName] +
+            " | Instructor: " +
+            student.course.instructor.name;
+
+        // Update nested properties and add new properties
+        student.address.city = "Indore";
+        student.address.pincode = 452001;
+        student.address["landmark"] = "Near Main Road";
+
+        student.course.title = "Advanced JavaScript";
+
+        document.getElementById("updatedProfile").textContent =
+            "Updated City: " + student.address.city +
+            " | Pincode: " + student.address.pincode +
+            " | Landmark: " + student.address.landmark +
+            " | Updated Course: " + student.course.title;
+
+        // Safely access a property that does not exist
+        // document.getElementById("safeAccess").textContent =
+        // "Campus Location: " +
+        // (student.address.location ? .city ? ? "Location not available");
+    </script>
+
+</body>
+
+</html>

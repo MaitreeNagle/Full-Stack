@@ -1,0 +1,48 @@
+const Student = [ {
+    name: "Maitree",
+    age:21,
+    college:lnct,
+    gander :"female",
+    marks:99,
+    Studys:[{
+        course:"B-tech", branch:"AIDS",stream:"Computer Science"}]
+    }
+,{
+     name: "Haeleen",
+    age:22,
+    college:jlu,
+    gander :"female",
+    marks:95,
+      Studys:[{
+        course:"LAW", branch:"Crime",stream:"justice"}]
+    
+    
+}
+,{
+     name: "Dhruvi",
+    age:23,
+    college:lnct,
+    gander :"female",
+    marks:80,
+      Studys:[{
+        course:"B-tech", branch:"CSE",stream:"Computer Science"}] 
+    
+}
+,{
+   name: "Mayank",
+    age:24,
+    college:lnct,
+    gander :"male",
+    marks:89,
+    Studys:[{course:"B-tech", branch:"AIDS",stream:"Computer Science"}]
+  
+    
+}];
+
+Student[3].Studys[2].branch="IOT";
+
+delete Student[3].name="Dhruvi";
+
+const someData={
+    
+}
