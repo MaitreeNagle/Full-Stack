@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*Create a JavaScript program to manage a course list using array methods.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        */
+        //push
+        const courses = ["btech", "bba", "mba"];
+        courses.push("LLB");
+        console.log("After push():", courses);
+        console.log(courses.length);
+
+        //pop
+        courses.pop();
+        console.log("After pop", courses);
+
+        //unshift
+        courses.unshift("Bio-tech");
+        courses.unshift("cse");
+        console.log(courses.length);
+        console.log("after unshift", courses);
+        //shift
+        courses.shift();
+        courses.shift();
+        console.log("after shift", courses);
+        // Display final array and length
+        console.log("Final Courses:", courses);
+        console.log("Final Length:", courses.length);
+    </script>
+    <h3>q2</h3>
+    <script>
+        const students = ["aman", "rudra", "anchal", "sujal"];
+        const shiftStd = students.shift();
+        console.log(students);
+        console.log(shiftStd);
+
+        //push
+        students.push("Mayank");
+        students.push("Harleen");
+        console.log(students);
+
+
+
+        const removeStd = students.pop();
+        console.log(students);
+        students.unshift();
+        console.log("Final Courses:", students);
+        console.log("Final Length:", students.length);
+    </script>
+
+</body>
+
+</html>
