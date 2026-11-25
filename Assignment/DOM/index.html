@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Portal</title>
+</head>
+
+<body>
+    <div>
+        <h1>Student Portal</h1>
+        <p>Welcome to RICR!</p>
+        <button>Start Learning</button>
+
+        <section>
+            <p>Explore your courses.</p>
+        </section>
+
+        <h1>Student Dashboard</h1>
+
+        <p>Welcome to RICR!</p>
+
+        <button>View Courses</button>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h1>Student Dashboard</h1>
+
+    <p>Welcome to RICR!</p>
+
+    <button>View Courses</button>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h1 id="pageTitle">Student Dashboard</h1>
+
+    <p id="courseInfo">Your course is HTML</p>
+
+    <script>
+        // Select the heading and read its text
+        const heading = document.getElementById("pageTitle");
+        console.log("Page Title:", heading.textContent);
+
+        // Select the paragraph and update its text
+        const course = document.getElementById("courseInfo");
+        course.textContent = "Your course is JavaScript";
+
+        console.log("Updated Course:", course.textContent);
+
+        // Check whether the requested element exists
+        const student = document.getElementById("studentName");
+
+        if (student !== null) {
+            console.log(student.textContent);
+        } else {
+            console.log("Element not found.");
+        }
+    </script>
+    <hr>
+
+    <h1 id="pageTitle">RICR Course Portal</h1>
+
+    <p class="course">HTML</p>
+    <p class="course">CSS</p>
+    <p class="course">JavaScript</p>
+
+    <script>
+        // Select the heading using its ID
+        const headingg = document.querySelector("#pageTitle");
+        console.log("Page Title:", headingg.textContent);
+
+        // Select the first course paragraph
+        const firstCourse = document.querySelector(".course");
+        console.log("First Course:", firstCourse.textContent);
+
+        // Select all course paragraphs
+        const courses = document.querySelectorAll(".course");
+
+        courses.forEach((course) => {
+            console.log("Course:", course.textContent);
+        });
+
+        // Display the total number of courses
+        console.log("Total Courses:", courses.length);
+    </script>
+    <hr>
+    <br>
+    <hr>
+
+    <div id="course">
+        <h2>HTML Fundamentals</h2>
+        <p>Course not started</p>
+        <button>Start Course</button>
+    </div>
+
+    <script>
+        // Select the heading
+        const Heading = document.querySelector("h2");
+
+        // Access the parent element
+        const parent = Heading.parentElement;
+        console.log("Parent Element:", parent);
+
+        // Access the child elements
+        console.log("Number of Children:", parent.children.length);
+        console.log("First Child:", parent.firstElementChild);
+        console.log("Last Child:", parent.lastElementChild);
+
+        // Access the paragraph and its sibling elements
+        const paragraph = heading.nextElementSibling;
+
+        console.log(
+            "Previous Sibling:",
+            paragraph.previousElementSibling.textContent
+        );
+
+        console.log(
+            "Next Sibling:",
+            paragraph.nextElementSibling.textContent
+        );
+
+        // Update the paragraph using DOM traversal
+        const statusParagraph = heading.nextElementSibling;
+        statusParagraph.textContent = "Course started successfully";
+
+        console.log("Updated Status:", statusParagraph.textContent);
+    </script>
+</body>
+
+</html>
