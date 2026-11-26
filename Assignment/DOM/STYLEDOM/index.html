@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Dashboard</title>
+</head>
+
+<body>
+    <h1 id="pageTitle">Old Dashboard</h1>
+
+    <p id="studentMessage">Welcome, Student!</p>
+
+    <button id="courseButton">View Courses</button>
+
+    <script>
+        // Store the new content in variables
+        const newTitle = "RICR Student Dashboard";
+        const newMessage = "Welcome to your learning portal!";
+        const newButtonText = "Start Learning";
+
+        // Select elements and update their content
+        const title = document.getElementById("pageTitle");
+        title.textContent = newTitle;
+
+        const message = document.getElementById("studentMessage");
+        message.textContent = newMessage;
+
+        const button = document.getElementById("courseButton");
+        button.textContent = newButtonText;
+    </script>
+</body>
+
+</html>
