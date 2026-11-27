@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="studentProfile">
+        <h2>Student Profile</h2>
+        <p id="studentMessage">Profile information is pending.</p>
+    </div>
+
+    <div id="studentProfil">
+        <h2 id="h">Student Profile</h2>
+        <p id="std">Profile information is pending.</p>
+    </div>
+
+
+
+    <script>
+        const para = document.getElementById("studentMessage");
+        para.textContent = "Welcome to RICR Student Portal!";
+        para.textContent = "<strong> Profile Verification </strong>";
+
+
+        //innerHtml
+        const heading = document.getElementById("h");
+        heading.innerHTML = "Course Details";
+        const p = document.getElementById("std");
+        p.innerHTML = " Course :  JavaScript";
+        heading.textContent = courseName;
+    </script>
+
+
+
+    <script>
+        const Heading = document.getElementById("courseCard");
+        Heading.innerHTML = `<h3>B-tech </h3>
+        <p> 4 year </p>`;
+    </script>
+
+    <div id="markupDemo"></div>
+    <script>
+        const Head = document.getElementById("markupDemo");
+        Head.textContent = "<strong>JavaScript Training</strong>";
+
+        Head.innerHTML = `   <h3>${courseName}</h3> <p>Learn JavaScript programming step by step.</p>`;
+    </script>
+
+
+</body>
+
+</html>
