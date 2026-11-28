@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Profile</title>
+</head>
+
+<body>
+    <img id="profileImage" src="student.jpg" alt="Student Photo">
+
+    <p id="studentNotice">Student profile information</p>
+
+    <input id="studentName" type="text" disabled>
+
+    <button id="submitButton" disabled>Submit</button>
+
+    <script>
+        // Select the image and read its initial attributes
+        const image = document.getElementById("profileImage");
+
+        console.log("Initial Source:", image.getAttribute("src"));
+        console.log("Initial Alt:", image.getAttribute("alt"));
+
+        // Update image attributes
+        image.setAttribute("src", "profile.jpg");
+        image.setAttribute("alt", "RICR Student Profile");
+
+        console.log("Updated Source:", image.getAttribute("src"));
+        console.log("Updated Alt:", image.getAttribute("alt"));
+
+        // Add a title attribute to the paragraph
+        const notice = document.getElementById("studentNotice");
+
+        notice.setAttribute(
+            "title",
+            "Student profile information"
+        );
+
+        console.log("Notice Title:", notice.getAttribute("title"));
+
+        // Check whether the button has a disabled attribute
+        const button = document.getElementById("submitButton");
+
+        console.log(
+            "Button Has Disabled Attribute:",
+            button.hasAttribute("disabled")
+        );
+
+        // Remove the disabled attribute from the input
+        const input = document.getElementById("studentName");
+
+        input.removeAttribute("disabled");
+
+        console.log(
+            "Input Has Disabled Attribute:",
+            input.hasAttribute("disabled")
+        );
+    </script>
+</body>
+
+</html>
